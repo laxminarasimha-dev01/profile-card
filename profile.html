@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>profile card</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ababab;
+    }
+
+    .slide-content {
+      position: relative;
+      width: 300px;
+      height: 450px;
+      background-color: #FFF;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-content,
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 14px;
+    }
+
+    .image-content {
+      position: relative;
+      row-gap: 5px;
+      padding: 25px 0;
+    }
+
+    .overlay {
+      border-radius: 0 25px 0 0;
+      background-color: #FFF;
+    }
+
+    .card-image {
+      position: relative;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      background: #FFF;
+      padding: 3px;
+    }
+
+    .card-image .card-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #889bb7;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #707070;
+      text-align: center;
+    }
+
+    .button {
+      border: none;
+      font-size: 16px;
+      color: #FFF;
+      padding: 8px 16px;
+      background-color: #4070F4;
+      border-radius: 6px;
+      margin: 14px;
+      cursor: pointer;
+    }
+
+
+    .footer-col .social-links a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(69, 20, 20, 0.2);
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: black;
+      transition: all 0.5s ease;
+    }
+
+    .footer-col .social-links a:hover {
+      color: #24262b;
+      background-color: rgb(255, 255, 255);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="slide-content">
+    <div class="image-content">
+      <span class="overlay"></span>
+      <div class="card-image">
+        <!-- <img src="https://picsum.photos/200" alt="" class="card-img"> -->
+        <img src="root@user1.jpg.png" alt="N Laxmi Narasimha" title="N Laxmi Narasimha" class="card-img">
+      </div>
+    </div>
+    <div class="card-content">
+
+      <h2 class="name">N Laxmi Narasimha</h2>
+
+      <p class="description">
+        Hi there! I'm a passionate <span
+          style="color: rgb(77, 255, 0);font: 1em sans-serif;font-size: larger;font-weight: 500;">web developer</span>
+        with a keen interest in <span
+          style="color: rgb(77, 255, 0);font: 1em sans-serif;font-size: larger;font-weight: 500;">cybersecurity</span>.
+      </p>
+
+      <button class="button">Connect !</button>
+      <div class="footer-col">
+        <div class="social-links">
+          <a href="https://github.com/nlaxminarasimha" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://wa.me/919381713108" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/n-laxmi-narasimha-h4c/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
